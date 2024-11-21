@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>Vasanth Online Space</title>
+  <link rel="icon" href="https://i.ibb.co/4TgnBBq/camera.png" type="image/png" sizes="16x16">
+
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* General Styles */
+    html, body {
+      scroll-behavior: smooth;
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      scroll-snap-type: y mandatory; /* Snap sections for smooth scrolling */
+    }
+
+    .section {
+      min-height: 100vh; /* Each section takes up the full viewport height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      scroll-snap-align: start; /* Snap to start of each section */
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 20px;
+    }
+
+    nav h3 {
+      margin: 0 15px;
+      cursor: pointer;
+      color: grey;
+    }
+
+    nav h3:hover {
+      color: black;
+    }
+
+    h1, h4, p {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* About Section */
+    #About img {
+      float: right;
+      margin: 0 0 20px 20px;
+      max-width: 400px;
+      width: 40%;
+    }
+
+    /* Images */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Status Section */
+    #Status img {
+      max-width: 400px;
+      margin: 20px auto;
+    }
+
+    /* Newsletter Section */
+    iframe {
+      margin-top: 20px;
+    }
+
+    /* Contact Section */
+    .social-icons a img {
+      margin: 0 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav h3 {
+        margin: 10px 0;
+      }
+
+      #About img {
+        float: none;
+        margin: 20px auto;
+        width: 90%;
+      }
+
+      .section {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <a href="#About"><h3>About</h3></a>
+      <a href="#Status"><h3>Status</h3></a>
+      <a href="#Newsletter"><h3>Newsletter</h3></a>
+      <a href="#Contact"><h3>Contact</h3></a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <div id="About" class="section">
+    <h1>Hello, I'm Vasanth!</h1>
+    <img src="https://i.ibb.co/CHXkKqS/index-removebg-preview.png" alt="My ideal lifestyle">
+    <p>
+      A creative learner building a life centered around curiosity,<br>
+      enthusiasm, and meaningful impacts. This space captures where I'm heading.<br>
+      I'm excited to share the journey with you.
+    </p>
+    <p>
+      My areas of interest probably include all aspects of life:<br>
+      personal development, health, knowledge, relationships, etc.
+    </p>
+  </div>
+
+  <!-- Status Section -->
+  <div id="Status" class="section">
+    <h1>Current Progress</h1>
+    <h4><i class="fas fa-plug"></i> Current progress</h4>
+
+    <p>
+      Through my "wellness and lifestyle app" and this "personal website," I aim to provide<br>
+      value to people while exploring and learning technical knowledge.
+    </p>
+    <img src="https://i.ibb.co/hmFw2TF/Untitled-design-2-removebg-preview.png" alt="Personal website making process">
+    <h4><i class="fas fa-circle-notch"></i> Publishing newsletter</h4>
+    <p>
+      <abbr title="I Don't Know">IDK</abbr> if it will excite or engage you, but I'm sure it'll be a valuable<br>
+      way for me to share my thoughts instead of keeping them in personal notes.
+    </p>
+    <img src="https://i.ibb.co/Cb6f7GT/Screenshot-2024-11-20-165729.png" alt="Newsletter publishing" height="200">
+  </div>
+
+  <!-- Newsletter Section -->
+  <div id="Newsletter" class="section">
+    <h1>5 Minutes That Might Engage and Resonate with You</h1>
+    <img src="https://i.ibb.co/CmxsZkH/Untitled-design-3-removebg-preview.png" alt="Newsletter mockup">
+    <p>Subscribe to receive the latest updates straight to your inbox!</p>
+    <iframe src="https://vasanthonlinespace.substack.com/embed" width="450" height="150" style="border:0; background:white;" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+ 
+<!-- Contact Section -->
+<div id="Contact" class="section">
+  <h1>Social Platforms</h1>
+  <div class="social-icons" style="display: flex; justify-content: center; gap: 20px;">
+    <a href="https://www.instagram.com/vasanth_official._/?__pwa=1#" target="_blank">
+      <i class="fab fa-instagram" style="font-size: 50px;"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/vasanth-bala-58b910213?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+      <i class="fab fa-linkedin" style="font-size: 50px;"></i>
+    </a>
+    <a href="https://youtube.com/@vasanthofficial1846?feature=shared" target="_blank">
+      <i class="fab fa-youtube" style="font-size: 50px;"></i>
+    </a>
+    <a href="mailto:vasanth.onlinespace@gmail.com" target="_blank">
+      <i class="fas fa-envelope" style="font-size: 50px;"></i>
+    </a>
+  </div>
+</div>
+
+
+</body>
+</html>
